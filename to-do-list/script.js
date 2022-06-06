@@ -5,13 +5,20 @@ function addTask(){
 
     let tasks = document.getElementById('to-do-list')
 
-    let check = document.createElement('input')
-
-    check.type = 'checkbox'
-
     let text = document.createElement('span')
 
     text.textContent = document.getElementById('task').value
+
+    let check = document.createElement('input')
+
+    check.type = 'checkbox'
+    check.addEventListener('change', function()  {
+        if(this.checked){
+            text.style.textDecoration = 'line-through';      
+        }else{
+            text.style.textDecoration = 'none';   
+        }
+    })
 
     let task = document.createElement('div')
 
