@@ -1,0 +1,40 @@
+
+
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.container h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 320px;
+    padding: 10px;
+    gap: 5px;
+}
+
+.container .content{
+    margin: auto;
+}
+
+
+input{
+    font-size: 1.1rem;
+}
+
+input[type="text"]{
+        width: 50%;
+}
+
+input[type="button"]{
+    font-size: 0.9rem;
+    height: 2rem;
+    width: 30%;
+}
